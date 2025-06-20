@@ -1,0 +1,127 @@
+@font-face {
+    font-family: font;
+    src: url('font.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.firstjnt{
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(197, 197, 197);
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.arm1{
+    width: 25vw;
+    height: 6vw;
+    background-color: rgb(255, 103, 111);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+}
+.secondjnt{
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(197, 197, 197);
+    position: relative;
+    left: 100%;
+    border-radius: 50px;
+}
+.arm2{
+    width: 25vw;
+    height: 3.7vw;
+    background-color: rgb(3, 12, 27);
+    position: inherit;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+}
+.thirdjnt{
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(197, 197, 197);
+    border-radius: 50px;
+    position: absolute;
+    left: 100%;
+}
+.arm1{
+    border-radius: 25px;
+}
+.arm2{
+    border-radius: 10px;
+}
+.joint{
+    transition: 0.07s linear;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(to bottom left,rgb(110, 123, 133) 10%, rgb(41, 55, 65) 90%); */
+    background-color: rgb(56, 59, 61);
+}
+.arm, .joint{
+    z-index: 6;
+}
+.main h1{
+    color: white;
+    font-size: 10vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: font;
+    font-weight: 500;
+    z-index: 0;
+    color: rgb(93, 96, 99);
+    
+}
+.main p{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+    font-family: poppins;
+    font-weight: 100;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .arm{
+        width: 40vw;
+    }
+    .arm1{
+        height: 10vw;
+    }
+    .arm2{
+        height: 7vw;
+    }
+    .joint{
+        height: 8vw;
+        width: 8vw;
+    }
+    .main p{
+        display: block;
+    }
+}
